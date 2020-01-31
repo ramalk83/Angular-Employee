@@ -1,0 +1,31 @@
+
+<div style="text-align:left;width:500px;">
+    <h1>
+        {{ title }}
+    </h1>
+
+</div>
+<div style="text-align:left;font-size: 15px;">
+<h2>Form Details : </h2>
+<table *ngIf="arrData">
+  <tr>
+    <th>Param Name  </th>
+    <th>Datatype  </th>
+    <th>Param Type </th>
+    <th>Default value </th>
+    <th>Lov-Id </th>
+  </tr>
+  <tr *ngFor="let mydatas of arrData">
+ <td>{{mydatas.parmname}}</td>
+ <td>{{mydatas.datatype}}</td>
+ <td>{{mydatas.parmtype}}</td>
+ <td>{{mydatas.dfltval}}</td>
+ <td>{{mydatas.lovid}}</td>
+ </tr>
+</table>
+
+
+</div>
+<script>
+
+</script>

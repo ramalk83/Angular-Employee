@@ -1,0 +1,18 @@
+{"newform":[
+        {
+            "parmname":"grade",
+            "datatype":"number",
+            "parmtype":"single",
+            "dfltval":"6",
+            "lovid":"1"
+        },
+        {
+            "parmname":"level",
+            "datatype":"string",
+            "parmtype":"single",
+            "dfltval":"advanced",
+            "lovid":"2"
+        }
+          
+    ]
+}

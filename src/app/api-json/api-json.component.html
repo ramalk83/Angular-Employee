@@ -1,0 +1,48 @@
+
+
+<div class="container">
+  <div class="row">
+<h2>Form Details : </h2>
+<table >
+ <tr>
+   <th>Parm Name </th>
+   <th>Data type  </th>
+   <th>Parm type </th>
+   <th>Default val</th>
+   <th>Lov-id</th>
+ </tr>
+ <tr *ngFor="let mydatas of myData">
+   <td>{{mydatas.parmname}}</td>
+   <td>{{mydatas.datatype}}</td>
+   <td>{{mydatas.parmtype}}</td>
+   <td>{{mydatas.dfltval}}</td>
+   <td>{{mydatas.lovid}}</td>
+ 
+  </tr>
+</table>
+<h2>Parm Type is single  </h2>
+<table>
+ <tr>
+   <td>{{myparam.parmname}}</td>
+   <td>{{myparam.datatype}}</td>
+   <td>{{myparam.parmtype}}</td>
+   <td>{{myparam.dfltval}}</td>
+   <td>{{myparam.lovid}}</td>
+  </tr>
+</table>
+<p>
+<label>Enter Grade :  </label>
+<input *ngIf="myparam.parmname == grade" placeholder="Enter grade" type="number" name="grade" min="1" max="12">
+</p>
+<p>
+   <label>Select Level:  </label>
+   <select *ngIf="myparam.parmname === 'level' && myparam.datatype === 'string' && myparam.parmtype === 'single' ">
+   <option value="advanced">Advanced</option>
+   <option value="proficient">PR</option>
+   <option value="Partialy Proficient">PP</option>
+
+ </select>
+</p>
+
+</div>
+</div>
